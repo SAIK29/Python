@@ -1,0 +1,37 @@
+
+List = [1,2,3,10,11,12,27,28,29]
+Listt = [30,29,20,59]
+SM = List + Listt
+
+R1 = input("Você quer ver uma lista de números? ").upper()
+
+if R1 == "S" or R1 == "SIM":
+
+    print(f"Aqui está a lista:\n{List}")
+
+    R1 = input("Tem outra lista, gostaria de ver? ").upper()
+
+    if R1 == "S" or R1 == "SIM":
+
+        print(f"Aqui está a lista:\n{SM}")
+
+        R1 = input("Se quise ver de forma unitaria por indici coloque sim: ").upper()
+
+        if R1 == 'S' or R1 == 'SIM':
+
+            print("Ok")
+            print(f"A lista\n {SM}")
+            print("Nota: começa no 0.")
+
+            R1 = int(input("Digite o número do indici que você quer ver: "))
+
+            print(f"Você pedio o {SM[R1]}.")
+
+        else:
+            print("Não intendi /:")
+    
+    else:
+        print("Tá bom né. |:")
+
+else:
+    print("Ok. ):")
